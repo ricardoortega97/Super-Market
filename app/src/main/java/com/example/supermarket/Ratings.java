@@ -6,9 +6,18 @@ public class Ratings {
     private float liquor;
     private float meat;
     private float produce;
-    private float dairy;
     private float cheese;
     private float ease;
+
+    private int marketID;
+
+    public int getMarketID() {
+        return marketID;
+    }
+
+    public void setMarketID(int i) {
+       this.marketID = i;
+    }
 
     public Ratings() {
         ratingID = -1;
@@ -46,13 +55,6 @@ public class Ratings {
         this.produce = f;
     }
 
-    public float getDairy() {
-        return dairy;
-    }
-
-    public void setDairy(float f) {
-        this.dairy = f;
-    }
 
     public float getCheese() {
         return cheese;

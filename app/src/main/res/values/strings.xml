@@ -8,4 +8,6 @@
     <string name="liquor_department">Liquor Department</string>
     <string name="ease_of_checkout">Ease of Checkout</string>
     <string name="back">Back</string>
+    <string name="cheese_department">Cheese Department</string>
+    <string name="meat_department">Meat Department</string>
 </resources>

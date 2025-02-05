@@ -73,7 +73,7 @@
             android:id="@+id/textMeatDepartment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/liquor_department" />
+            android:text="@string/meat_department" />
 
         <RatingBar
             android:id="@+id/rateMeatDepartment"
@@ -99,10 +99,10 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/liquor_department" />
+            android:text="@string/cheese_department" />
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/rateCheeseDepartment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp" />
@@ -144,7 +144,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkout" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

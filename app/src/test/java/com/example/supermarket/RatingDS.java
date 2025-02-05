@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.content.Context;
-import android.media.Rating;
 
 public class RatingDS {
 
@@ -26,11 +25,10 @@ public class RatingDS {
         try {
             ContentValues initialValues = new ContentValues();
 
-
+            initialValues.put("marketID", r.getMarketID());
             initialValues.put("liquor", r.getLiquor());
             initialValues.put("meat", r.getMeat());
             initialValues.put("produce", r.getProduce());
-            initialValues.put("dairy", r.getDairy());
             initialValues.put("cheese", r.getCheese());
             initialValues.put("ease", r.getEase());
 
@@ -46,10 +44,10 @@ public class RatingDS {
             long rowId = (long) r.getRatingID();
             ContentValues updateValues = new ContentValues();
 
+            updateValues.put("marketID", r.getMarketID());
             updateValues.put("liquor", r.getLiquor());
             updateValues.put("meat", r.getMeat());
             updateValues.put("produce", r.getProduce());
-            updateValues.put("dairy", r.getDairy());
             updateValues.put("cheese", r.getCheese());
             updateValues.put("ease", r.getEase());
 
